@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/resume"
+        android:background="#ffffff"
+        android:gravity="start"
+        android:padding="10dp"
+        android:textColor="#609dcc"
+
+        android:text="Upload resume "/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Sign"
+        android:gravity="start"
+        android:padding="10dp"
+        android:contextClickable="true"
+        android:textColor="#609dcc"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editprofile"
+        android:textColor="#609dcc"
+        android:gravity="start"
+        android:padding="10dp"
+
+        android:background="#ffffff"
+        android:text="Edit Profile" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/recmnd"
+        android:gravity="start"
+        android:textColor="#609dcc"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:layout_marginBottom="5dp"
+        android:text="Recommended jobs" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tC"
+        android:textColor="#609dcc"
+        android:gravity="start"
+        android:padding="10dp"
+        android:background="#ffffff"
+
+        android:text="Terms and Conditions"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/privacy"
+        android:gravity="start"
+        android:textColor="#609dcc"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:text="Privacy Policy"/>
+
+
+
+</LinearLayout>
