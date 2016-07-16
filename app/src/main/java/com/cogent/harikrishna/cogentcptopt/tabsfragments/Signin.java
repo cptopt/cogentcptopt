@@ -1,4 +1,4 @@
-package com.cogent.harikrishna.cogentcptopt.registration;
+package com.cogent.harikrishna.cogentcptopt.tabsfragments;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;

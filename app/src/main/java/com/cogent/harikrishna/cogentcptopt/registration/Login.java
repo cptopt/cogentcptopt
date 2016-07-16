@@ -1,4 +1,4 @@
-package com.cogent.harikrishna.cogentcptopt.tabsfragments;
+package com.cogent.harikrishna.cogentcptopt.registration;
 
 import android.content.Intent;
 import android.net.Uri;

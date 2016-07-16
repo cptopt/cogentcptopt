@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.cogent.harikrishna.cogentcptopt.R;
-import com.cogent.harikrishna.cogentcptopt.registration.Signin;
 
 /**
  * Created by Hari Krishna on 7/15/2016.

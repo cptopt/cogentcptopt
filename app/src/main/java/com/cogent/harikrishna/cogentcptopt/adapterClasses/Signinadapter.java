@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.cogent.harikrishna.cogentcptopt.registration.Register;
-import com.cogent.harikrishna.cogentcptopt.tabsfragments.Login;
+import com.cogent.harikrishna.cogentcptopt.registration.Login;
 
 /**
  * Created by Hari Krishna on 7/15/2016.
