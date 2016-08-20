@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/serviceheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/emailheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/notifications"
+            android:layout_toEndOf="@+id/notifications"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="35dp" />
+        <TextView
+            android:id="@+id/jobAlerts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Alerts"
+            android:textSize="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/serviceheading"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/notifications"
+            android:layout_width="150dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:text="Important Notifications From OptnCpt.com"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/jobAlerts"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/clientcommunications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client Communication"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:layout_below="@+id/notifications"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/paidservices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paid Services"
+            android:textSize="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/clientcommunications"
+            android:layout_marginLeft="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/jobalertgrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_above="@+id/notifications"
+            android:layout_toRightOf="@+id/clientcommunications"
+            android:layout_toEndOf="@+id/clientcommunications">
+            <RadioButton
+                android:id="@+id/onbuttonE1"
+                android:text="On"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/jobAlerts"
+                android:layout_alignLeft="@+id/emailheading"
+                android:layout_alignStart="@+id/emailheading" />
+
+            <RadioButton
+                android:text="Off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/offButtonE1"
+              />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/impNotifctngrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignTop="@+id/notifications"
+            android:layout_alignLeft="@+id/clientgrp"
+            android:layout_alignStart="@+id/clientgrp">
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="On"
+               android:id="@+id/onbuttonE2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Off"
+                android:id="@+id/offbuttonE2"/>
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/clientgrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignTop="@+id/clientcommunications"
+            android:layout_toRightOf="@+id/notifications"
+            android:layout_toEndOf="@+id/notifications">
+            <RadioButton
+
+                android:text="On"
+                android:id="@+id/onbuttonE3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/jobAlerts"
+                android:layout_alignLeft="@+id/emailheading"
+                android:layout_alignStart="@+id/emailheading" />
+
+            <RadioButton
+                android:text="Off"
+                android:id="@+id/offbuttonE3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/onbutton"
+                android:layout_toRightOf="@+id/onbutton"
+                android:layout_toEndOf="@+id/onbutton"/>
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/paidgrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignTop="@+id/paidservices"
+            android:layout_alignLeft="@+id/clientgrp"
+            android:layout_alignStart="@+id/clientgrp">
+            <RadioButton
+
+                android:text="On"
+                android:id="@+id/onbuttonE4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/jobAlerts"
+                android:layout_alignLeft="@+id/emailheading"
+                android:layout_alignStart="@+id/emailheading" />
+
+            <RadioButton
+                android:text="Off"
+                android:id="@+id/offbuttonE4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/onbutton"
+                android:layout_toRightOf="@+id/onbutton"
+                android:layout_toEndOf="@+id/onbutton"/>
+        </RadioGroup>
+
+        <RelativeLayout
+           android:layout_below="@+id/paidservices"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:id="@+id/relative1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/serviceheading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/smsheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calls/Sms"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_above="@+id/notifications1"
+                android:layout_alignRight="@+id/impNotifctngrp1"
+                android:layout_alignEnd="@+id/impNotifctngrp1" />
+
+            <TextView
+                android:id="@+id/notifications1"
+                android:layout_width="150dp"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="Important Notifications From OptnCpt.com"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/serviceheading1" />
+            <TextView
+                android:id="@+id/clientcommunications1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client Communication"
+                android:layout_marginTop="25dp"
+                android:textSize="15dp"
+                android:layout_below="@+id/notifications1"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/paidservices1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid Services"
+                android:textSize="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/clientcommunications1"
+                android:layout_marginLeft="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/impNotifctngrp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignBottom="@+id/notifications1"
+                android:layout_alignLeft="@+id/clientgrp1"
+                android:layout_alignStart="@+id/clientgrp1">
+                <RadioButton
+
+                    android:text="On"
+                    android:id="@+id/onbuttonS1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/jobAlerts"
+                    android:layout_alignLeft="@+id/emailheading"
+                    android:layout_alignStart="@+id/emailheading" />
+
+                <RadioButton
+                    android:text="Off"
+                    android:id="@+id/offbuttonS1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/onbutton"
+                    android:layout_toRightOf="@+id/onbutton"
+                    android:layout_toEndOf="@+id/onbutton"/>
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/clientgrp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignTop="@+id/clientcommunications1"
+                android:layout_toRightOf="@+id/notifications1"
+                android:layout_toEndOf="@+id/notifications1">
+                <RadioButton
+
+                    android:text="On"
+                    android:id="@+id/onbuttonS2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/jobAlerts"
+                    android:layout_alignLeft="@+id/emailheading"
+                    android:layout_alignStart="@+id/emailheading" />
+
+                <RadioButton
+                    android:text="Off"
+                    android:id="@+id/offbuttonS2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/onbutton"
+                    android:layout_toRightOf="@+id/onbutton"
+                    android:layout_toEndOf="@+id/onbutton"/>
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/paidgrp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignTop="@+id/paidservices1"
+                android:layout_alignLeft="@+id/clientgrp1"
+                android:layout_alignStart="@+id/clientgrp1">
+                <RadioButton
+
+                    android:text="On"
+                    android:id="@+id/onbuttonS3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/jobAlerts"
+                    android:layout_alignLeft="@+id/emailheading1"
+                    android:layout_alignStart="@+id/emailheading1" />
+
+                <RadioButton
+                    android:text="Off"
+                    android:id="@+id/offbuttonS3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/onbutton"
+                    android:layout_toRightOf="@+id/onbutton"
+                    android:layout_toEndOf="@+id/onbutton"/>
+            </RadioGroup>
+
+
+
+        </RelativeLayout>
+<Button
+    android:layout_below="@+id/relative1"
+    android:layout_width="match_parent"
+    android:layout_marginTop="15dp"
+    android:id="@+id/communicationsavechanges"
+    android:text=" savechanges"
+    android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</ScrollView>

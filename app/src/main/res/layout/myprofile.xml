@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/parentlayout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/h1txt"
+            android:layout_marginBottom="10dp"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="My Profile"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout1"
+            android:layout_below="@+id/h1txt"
+            android:layout_marginBottom="10dp"><de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/profilepic"
+                android:src="@drawable/kw"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Personal Details"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/heading1"
+            android:gravity="center"
+            android:layout_marginRight="83dp"
+            android:layout_marginEnd="83dp"
+            android:layout_below="@+id/layout1"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout2"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/heading1"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="FirstName"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/fn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="LastName"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ln"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="CurrentLocation"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/cl"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Industry"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/industry"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Date Of Birth"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/dob"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Gender"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/gender"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Key Skills"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/skills"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Mobile Number"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/phno"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Email"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/mail"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Highest Qualification"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/qualification"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+
+        android:text="Permanent Address"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/paddress"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Pincode"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/pincode"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Nationality"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/nationality"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:text="Education Details"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Specialization"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/specialization"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="University"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/university"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Year of Passing"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/yop"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Desired JobType"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/jobtype"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Preffered Location"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/pl"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:id="@+id/butns"
+       android:weightSum="1">
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:id="@+id/uploadresume"
+           android:layout_marginBottom="10dp"
+           android:text="Upload Resume"
+           android:layout_marginRight="30dp"
+           android:layout_weight="0.29" />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:id="@+id/upload"
+            android:text="Upload"
+           android:layout_weight="0.35" />
+   </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Download Resume"
+        android:id="@+id/downloadResume"/>
+
+        />
+
+</LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

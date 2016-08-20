@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Permanent Address"
+          android:id="@+id/txt"
+         android:textColor="@color/colorAccent"
+          android:textStyle="bold"
+          android:textSize="30dp"
+          android:layout_marginBottom="15dp"
+          android:gravity="center"
+          />
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:id="@+id/addrline"
+          android:gravity="center"
+          android:hint="AddressLine"
+          android:textSize="15dp"
+          android:layout_marginBottom="10dp"
+          android:layout_below="@+id/txt"
+          android:background="@drawable/edittxtstyles"/>
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:id="@+id/streetname"
+          android:textSize="15dp"
+          android:gravity="center"
+          android:hint="StreetName"
+          android:background="@drawable/edittxtstyles"
+          android:layout_marginBottom="10dp"
+          android:layout_below="@+id/addrline"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/statelayout"
+        android:layout_below="@id/streetname"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/streetname"
+            android:gravity="center_vertical"
+            android:id="@+id/txtstate"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="State   "/>
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/statespinner"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/txtstate"
+            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp"
+            android:layout_below="@+id/streetname">
+
+        </AutoCompleteTextView>
+
+    </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:orientation="horizontal"
+          android:id="@+id/countrylayout"
+          android:layout_marginBottom="10dp"
+          android:layout_below="@id/statelayout">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_below="@+id/txtstate"
+              android:gravity="center_vertical"
+              android:id="@+id/txtcountry"
+              android:textSize="20sp"
+              android:text="Country "/>
+          <AutoCompleteTextView
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:id="@+id/countriesSpinner"
+              android:layout_gravity="center_vertical"
+              android:layout_below="@+id/streetname"
+              android:layout_marginLeft="32dp"
+              android:layout_marginStart="32dp"
+              android:layout_alignLeft="@+id/statespinner"
+              android:layout_alignStart="@+id/statespinner">
+
+          </AutoCompleteTextView>
+      </LinearLayout>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:hint="pincode"
+    android:id="@+id/pincode"
+    android:gravity="center"
+    android:layout_marginBottom="25dp"
+    android:background="@drawable/edittxtstyles"
+    android:textSize="15dp"
+    android:layout_below="@id/countrylayout"/>
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Temporary Address"
+          android:id="@+id/txt1"
+          android:textStyle="bold"
+          android:textSize="30dp"
+         android:textColor="@color/colorAccent"
+          android:layout_below="@id/pincode"
+          android:layout_marginBottom="15dp"
+          android:gravity="center"
+          />
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:id="@+id/addrline1"
+          android:hint="AddressLine"
+          android:textSize="15dp"
+          android:gravity="center"
+          android:layout_marginBottom="10dp"
+          android:layout_below="@+id/txt1"
+          android:background="@drawable/edittxtstyles"/>
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:id="@+id/streetname1"
+          android:textSize="15dp"
+          android:hint="StreetName"
+          android:gravity="center"
+          android:background="@drawable/edittxtstyles"
+          android:layout_marginBottom="10dp"
+          android:layout_below="@+id/addrline1"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:id="@+id/statelayout1"
+          android:layout_below="@id/streetname1"
+          android:layout_marginBottom="10dp"
+          android:orientation="horizontal">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_below="@+id/streetname1"
+              android:gravity="center_vertical"
+              android:id="@+id/txtstate1"
+              android:textSize="20dp"
+              android:layout_marginBottom="10dp"
+              android:text="State   "/>
+          <AutoCompleteTextView
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:id="@+id/statespinner1"
+              android:layout_gravity="center_vertical"
+              android:layout_alignParentBottom="true"
+              android:layout_toRightOf="@+id/txtstate1"
+              android:layout_marginLeft="42dp"
+              android:layout_marginStart="42dp"
+              android:layout_below="@+id/streetname1">
+
+          </AutoCompleteTextView>
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:orientation="horizontal"
+          android:id="@+id/countrylayout1"
+          android:layout_marginBottom="10dp"
+          android:layout_below="@id/statelayout1">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_below="@+id/txtstate"
+              android:gravity="center_vertical"
+              android:id="@+id/txtcountry1"
+              android:textSize="20dp"
+              android:text="Country"/>
+          <AutoCompleteTextView
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:id="@+id/countriesSpinner1"
+              android:layout_gravity="center_vertical"
+              android:layout_below="@+id/streetname1"
+              android:layout_marginLeft="40dp"
+              android:layout_marginStart="40dp"
+              android:layout_alignLeft="@+id/statespinner1"
+              android:layout_alignStart="@+id/statespinner1">
+
+          </AutoCompleteTextView>
+      </LinearLayout>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:hint="pincode"
+          android:id="@+id/pincode1"
+          android:gravity="center"
+          android:textSize="15dp"
+          android:layout_marginBottom="20dp"
+          android:background="@drawable/edittxtstyles"
+          android:layout_below="@id/countrylayout1"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/savechanges"
+    android:layout_below="@id/pincode1"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/saveChanges"
+
+        android:text="savechanges"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/submit"
+        android:layout_marginLeft="20dp"
+
+        android:text="Submit"/>
+
+</LinearLayout>
+  </RelativeLayout>
+
+</ScrollView>
