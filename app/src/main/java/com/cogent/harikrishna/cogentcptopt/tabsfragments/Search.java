@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.cogent.harikrishna.cogentcptopt.Nextpage;
+import com.cogent.harikrishna.cogentcptopt.NextPage;
 import com.cogent.harikrishna.cogentcptopt.R;
 
 /**
@@ -42,7 +42,7 @@ public class Search extends Fragment {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(),Nextpage.class);
+                Intent intent = new Intent(getContext(),NextPage.class);
                 startActivity(intent);
             }
         });

@@ -17,16 +17,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
+
+
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+
         final TabLayout tabLayout = (TabLayout) findViewById(R.id.Tabs);
+
+        //tabLayout.isClickable();
+
         tabLayout.addTab(tabLayout.newTab().setText("").setIcon(R.drawable.mag));
         tabLayout.addTab(tabLayout.newTab().setText("").setIcon(R.drawable.heart));
         tabLayout.addTab(tabLayout.newTab().setText("").setIcon(R.drawable.building));
         tabLayout.addTab(tabLayout.newTab().setText("").setIcon(R.drawable.pro));
+
         tabLayout.addTab(tabLayout.newTab().setText("").setIcon(R.drawable.add));
+
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager pager =(ViewPager)findViewById(R.id.Viewpage);
@@ -61,4 +68,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
 }

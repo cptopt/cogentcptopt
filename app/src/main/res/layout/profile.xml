@@ -4,30 +4,26 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/resume"
+        android:id="@+id/myprofile"
         android:background="#ffffff"
         android:gravity="start"
         android:padding="10dp"
         android:textColor="#609dcc"
-
-        android:text="Upload resume "/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/Sign"
-        android:gravity="start"
-        android:padding="10dp"
-        android:contextClickable="true"
-        android:textColor="#609dcc"
-        android:layout_marginBottom="5dp"
-        android:background="#ffffff"
-        />
-
+        android:text="My Profile "/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:id="@+id/Sign"
+           android:gravity="start"
+           android:padding="10dp"
+           android:text="Sign in"
+           android:contextClickable="true"
+           android:textColor="#609dcc"
+           android:layout_marginBottom="5dp"
+           android:background="#ffffff"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -35,10 +31,8 @@
         android:textColor="#609dcc"
         android:gravity="start"
         android:padding="10dp"
-
         android:background="#ffffff"
         android:text="Edit Profile" />
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -49,7 +43,6 @@
         android:background="#ffffff"
         android:layout_marginBottom="5dp"
         android:text="Recommended jobs" />
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -58,9 +51,7 @@
         android:gravity="start"
         android:padding="10dp"
         android:background="#ffffff"
-
         android:text="Terms and Conditions"/>
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -70,7 +61,4 @@
         android:padding="10dp"
         android:background="#ffffff"
         android:text="Privacy Policy"/>
-
-
-
 </LinearLayout>

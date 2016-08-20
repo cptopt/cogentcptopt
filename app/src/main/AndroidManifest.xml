@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cogent.harikrishna.cogentcptopt">
+    <supports-screens android:resizeable="true"/>
+    <supports-screens android:smallScreens="true"
+        android:normalScreens="true"
+        android:xlargeScreens="true"
+        android:largeScreens="true"/>
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,20 +36,23 @@
             </intent-filter>
         </activity>
         <activity android:name=".tabsfragments.Signin"/>
-        <activity android:name=".Nextpage"
+        <activity android:name=".NextPage"
             android:parentActivityName=".MainActivity">
-
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"></meta-data>
-
-
-
         </activity>
 
 
+        <activity android:name=".Activities.EditDetails"></activity>
+        <activity android:name=".Activities.EditAddress"></activity>
+        <activity android:name=".Activities.Fab"/>
+        <activity android:name=".Activities.Feedback"/>
+        <activity android:name=".Activities.AddProject"/>
+        <activity android:name=".Activities.Changepassword"/>
+        <activity android:name=".Activities.Settings"/>
+        <activity android:name=".Activities.VisibilitySettings"/>
+        <activity android:name=".Activities.Communication"/>
 
-
-
+        <!--<activity an-->
     </application>
-
 </manifest>
